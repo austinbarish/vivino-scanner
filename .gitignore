@@ -1,1 +1,5 @@
 config.env
+node_modules
+vivino.js
+package-lock.json
+package.json
