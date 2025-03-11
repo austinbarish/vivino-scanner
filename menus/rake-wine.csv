@@ -17,10 +17,151 @@ id,producer,name,type,main_type,region,country,vintage,price,size
 ,Josep Foraster,Lilla,METODE ANCESTRAL,ROSE,Catalonia,ESP,,,bottle
 ,Nevio Scala,Gargante,,ORANGE,Veneto,ITA,,53,bottle
 ,Folicello,Il Rosso,,RED,Emilia Romagna,ITA,,44,bottle
-,Escala Humana Wines,Livverá,,WHITE,Mendoza,Argentina,2020,48,bottle
-,Gernot & Heike Heinrich,Naked White,,WHITE,Burgenland,AUT,2021,46,bottle
-,Matthias Warnung,Basis,,WHITE,Niederosterreich,AUT,,49,bottle
-,Hager Matthias,Mollands,,WHITE,Niederosterreich,AUT,,49,bottle
-,Au Bon Climat,Los Alamos Vineyard,,WHITE,Sta. Barbara County,USA,2020,66,bottle
-,Arnot-Roberts,Watson Ranch,,WHITE,Napa County,USA,2020,94,bottle
-,Martha Stoumen Wines,Honeymoon,,WHITE,Mendocino County,USA,2020,80,bottle
+,Escala Humana Wines,Livverá,Tupungato Malvasia,WHITE,Mendoza,Argentina,2020,48,bottle
+,Gernot & Heike Heinrich,Naked White,PB + Chardonnay + PG,WHITE,Burgenland,Austria,2021,46,bottle
+,Matthias Warnung,Basis,Gruner Veltliner,WHITE,Niederosterreich,Austria,,49,bottle
+,Hager Matthias,Mollands,Gruner Veltliner,WHITE,Niederosterreich,Austria,,49,bottle
+,Au Bon Climat,Los Alamos Vineyard,Chardonnay,WHITE,Sta. Barbara County,USA,2020,66,bottle
+,Arnot-Roberts,Watson Ranch,Chardonnay,WHITE,Napa Valley,USA,2020,94,bottle
+,Martha Stoumen Wines,Honeymoon,Colombard + Chard + Chenin,WHITE,Mendocino County,USA,2020,80,bottle
+,Rogue Vine,Grand Itata,Moscatel + Riesling,WHITE,Itata Valley,Chile,2021,42,bottle
+,Chavost,Coteaux Champenois Blanc,Chardonnay,SPARKLING,Champagne,France,,175,bottle
+,Domaine de la Loue,0 - Sous Voile,Savagnin,WHITE,Jura,France,2018,125,bottle
+,Pierre Richard,Les Marnes,Chardonnay,WHITE,Jura,France,2020,60,bottle
+,Jean & Sébastien Dauvissat,Les Preuses,Chardonnay,WHITE,Burgundy,France,2018,177,bottle
+,Domaine L' Ecu,Taurus,Melon de Bourgogne,WHITE,Loire Valley,France,2020,98,bottle
+,La Pepiere,Le Pepie,Melon de Bourgogne,WHITE,Loire Valley,France,2022,44,bottle
+,Domaine du Closel,Clos Du Papillon,Chenin Blanc,WHITE,Loire Valley,France,2019,134,bottle
+,Nicolas Reau,Attention Chenin Merchant,Chenin Blanc,WHITE,Loire Valley,France,2021,53,bottle
+,François Crochet,Le Chêne Marchand,Sauvignon Blanc,WHITE,Loire Valley,France,2019,94,bottle
+,Domaine Mann,Vignoble Des 3 Terres,Riesling,WHITE,Alsace,France,2018,140,bottle
+,Franck Balthazar,Perjak,Roussanne + Jacquere,WHITE,Rhone Valley,France,,49,bottle
+,Vigneti Massa,Derthona,Timorasso,WHITE,Piedmont,Italy,2018,73,bottle
+,Brovia,Roero Arneis,Arneis,WHITE,Piedmont,Italy,2021,58,bottle
+,De Forville,Moscato D' Asti,Moscato,WHITE,Piedmont,Italy,2021,39,bottle
+,Nevio Scala,Blanko,Garganega blend,WHITE,Veneto,Italy,,46,bottle
+,Anselmi,San Vincenzo,Garganega blend,WHITE,Veneto,Italy,2022,46,bottle
+,I Clivi,Brazan,Friulano + Malvasia,WHITE,Friuli-Venezia Giulia,Italy,2020,62,bottle
+,Ronchi di Calla,Friuli Colli Orientali,Ribolla Gialla,WHITE,Friuli-Venezia Giulia,Italy,2021,47,bottle
+,Bruno Verdi,Oltrepo Pavese,Pinot Grigio,WHITE,Lombardy,Italy,2021,43,bottle
+,Tiberio,Colline Pescariesi,Pecorino,WHITE,Abruzzo,Italy,2021,57,bottle
+,Fabio Ferracane,Guanciablanca,Catarratto,WHITE,Sicily,Italy,2022,49,bottle
+,Castellucci Miano,Catarratto,Catarratto,WHITE,Sicily,Italy,2022,46,bottle
+,Joh. Jos.Prum,"""Graacher Himmelreich"", Kabinett Riesling",KABINETT RIESLING,WHITE,Mosel,Germany,2020,96,bottle
+,Joh Jos Prum,"""Wehlener Sonnenuhr"", Spätlese Riesling",SPÄTLESE RIESLING,WHITE,Mosel,Germany,2020,112,bottle
+,Domaine Tetta,"""Perlant"" (*slightly fizzy) Chardonnay blend",CHARDONNAY BLEND,WHITE,Okayama,Japan,2021,89,bottle
+,Nathan K. Wines,"""Dry"" Riesling",RIESLING,WHITE,Finger Lakes,USA,2021,53,bottle
+,Usonia,"""Cayuga Cayuga"" Cayuga",CAYUGA,WHITE,Finger Lakes,USA,2022,61,bottle
+,Portugal Wine Firm,"""Belzebu"" Verdelho",VERDELHO,WHITE,Tavora-Varosa,Portugal,2020,49,bottle
+,Portugal Wine Firm,"""Ayres"", Grande Riserva Arinto blend",ARINTO BLEND,WHITE,Dao,Portugal,2020,74,bottle
+,Luis Pato,"""Vinhas Velhas Branco"" Bical + Cercial + M. Gomes",BICAL + CERCIAL + M. GOMES,WHITE,Bairrada,Portugal,1991,163,bottle
+,Joao Pato,"""Duckman"", Vinho Branco Bical",BICAL,WHITE,Bairrada,Portugal,2020,42,bottle
+,Fento,"""O Estranxeiro"", Ribeira Sacra Godello blend",GODELLO BLEND,WHITE,Galicia,Spain,2020,56,bottle
+,Cesar Marquez,"""Parajes"", Bierzo Godello",GODELLO,WHITE,Galicia,Spain,2020,52,bottle
+,Iria Otero,"""Sacabeira"", Rias Baixas Albarino",ALBARINO,WHITE,Galicia,Spain,2021,59,bottle
+,Iria Otero,"""Alebub"", Ribeiro White Blend",WHITE BLEND,WHITE,Galicia,Spain,2019,67,bottle
+,Iria Otero,"""Cosco"", Ribeiro Loureiro + Godello + Treixadura",LOUREIRO + GODELLO + TREIXADURA,WHITE,Galicia,Spain,2020,88,bottle
+,Orto Vins,"""Les Argiles d' Orto Vins Blanc"", Montsant Macabeo + Garnatxa Blanca",MACABEO + GARNATXA BLANCA,WHITE,Catalonia,Spain,2021,49,bottle
+,Rezabal,"""Txakoli"", Getariako Txakolina Hondarrabi-Zuri",HONDARRABI-ZURI,WHITE,Basque Country,Spain,2022,40,bottle
+,Can Majoral,"""Butibalausi Blanc"" Premsal + Chard. + Parellada",PREMSAL + CHARD. + PARELLADA,WHITE,Mallorca,Spain,2021,46,bottle
+,Bodegas Ponce,"""Reto"" Albillo",ALBILLO,WHITE,Castilla-La Mancha,Spain,2021,53,bottle
+,Victoria Ordonez,"""La Ola del Melillero"" Pedro Ximenez + Moscatel",PEDRO XIMENEZ + MOSCATEL,WHITE,Andalucia,Spain,2020,49,bottle
+,Meinklang,Graupert,Osterreich Pinot Gris,WHITE,Burgenland,Austria,2020,57,bottle
+,Roark,Orange,Grenache Blanc + Marsanne,WHITE,Santa Ynez Valley,USA,2021,98,bottle
+,Villard,JCV,Ramato Pinot Grigio,ROSE,Casablanca Valley,Chile,2020,58,bottle
+,Les Vins Pirouettes,Le Brutal!!! de Jean-Marc,Gewurz + PG + Riesling,WHITE,Alsace,France,2020,78,bottle
+,Les Sablonnettes,Zeste,Chenin Blanc,WHITE,Loire Valley,France,2022,64,bottle
+,Isabelle & Thierry Daulhiac,Bise,Semillon + Sauvignon Blanc,WHITE,Loire Valley,France,2022,56,bottle
+,Gabriel's Wine,,Rkatsiteli + Mtsvane,WHITE,Kartli,Georgia,2021,56,bottle
+,Orgo,Dila-o,Rkatsiteli + Mtsvane,WHITE,Kakheti,Georgia,2022,52,bottle
+,Nareklishvili & Sons,Qvevri Wine Cellar,Mtsvane,WHITE,Kakheti,Georgia,2019,71,bottle
+,Kiketi Wine Farm,Khikhvi Qvevri,Khikhvi,WHITE,Kakheti,Georgia,2021,49,bottle
+,Nevio Scala,Contame,Garganega,WHITE,Veneto,Italy,2017,63,bottle
+,Podere Pradarolo,Ex Plana,Spergola,WHITE,Emilia-Romagna,Italy,2022,60,bottle
+,Az. Agr. Denavolo,Dinavolino,Malvasia blend,WHITE,Piedmont,Italy,2021,79,bottle
+,Rake x Osmote,Free-Ulano,Skin-Contact Tocai Friulano belnd,ORANGE,Finger Lakes,USA,2023,49,bottle
+,Bojo do Luar,Do Bojo,Azal + Arinto,WHITE,Minho,Portugal,2021,52,bottle
+,Bojo do Luar,Doralice,Loureiro,WHITE,Minho,Portugal,2022,51,bottle
+,Celler Sanroma,We've Made Contact,Xarel-lo,WHITE,Catalonia,Spain,2022,46,bottle
+,Costador,Metamorphika,Brisat Xarel-lo,ORANGE,Catalonia,Spain,2022,85,bottle
+,Alonso & Pedrajo,Nauda,Viura,WHITE,Rioja,Spain,2020,60,bottle
+,C. Balaguer,Benimaquia Tinajas,Moscatel,WHITE,Valencia,Spain,2021,89,bottle
+,Az. Agr. Denavolo,Dinavolino,Malvasia blend,ORANGE,Piedmont,Italy,2021,69,bottle
+,Gut Oggau,"""Maskerade"" Field Blend",Field Blend,RED,Burgenland,Austria,2021,94,bottle
+,Weingut Pittnauer,"""Konig"" Blaufränkisch",Blaufränkisch,RED,Burgenland,Austria,2023,46,bottle
+,Robert Sinskey,"""Vin Gris of Pinot Noir""",Pinot Noir,ROSE,Napa Valley,USA,2022,93,bottle
+,Arnot-Roberts,Touriga Nacional blend,Touriga Nacional blend,RED,California,USA,2023,53,bottle
+,Clos Ste. Magdeleine,Cassis Grenache blend,Grenache blend,RED,Provence,France,2021,86,bottle
+,Domaine de la Realtiere,"""Pastel"" Cinsault + Grenache",Cinsault + Grenache,RED,Provence,France,2022,53,bottle
+,Domaine la Mongestine,"""Bob Singlar"" Cinsault + Grenache + Vermentino",Cinsault + Grenache + Vermentino,RED,Provence,France,2023,49,bottle
+,Dominique et Janine Crochet,Sancerre Pinot Noir,Pinot Noir,RED,Loire Valley,France,2022,59,bottle
+,La Croix St. Laurent,Sancerre Pinot Noir,Pinot Noir,RED,Loire Valley,France,2023,49,bottle
+,Olga Raffault,Chinon Cabernet Franc,Cabernet Franc,RED,Loire Valley,France,2022,51,bottle
+,Frank Cornelissen,"""Susucaru Rosato"" Nerello blend",Nerello blend,ROSE,Sicily,Italy,2022,63,bottle
+,Day Wines,"""Lemonade"" Pinot Noir",Pinot Noir,ROSE,Willammette Valley,USA,2022,50,bottle
+,MicroBio Wines,"""Correcaminos"" Castilla Y León Tempranillo",Tempranillo,ROSE,Castilla Y Leon,Spain,2021,59,bottle
+,Carmelo Patti,Malbec,,RED,Mendoza,Argentina,2018,71,bottle
+,Patrick Sullivan & Xavier Goodridge,"""Jumping Juice"" Pinot Noir",NV,RED,Victoria,Australia,,54,bottle
+,Morgan,"""Twelve Clones"" Pinot Noir",,RED,Sta. Lucia Highlands,USA,2020,84,bottle
+,Sandhi Wines,"""Jalama Canyon Ranch"" Pinot Noir",,RED,Sta. Barbara County,USA,2021,250,bottle
+,Sandhi Wines,"""White Buffalo Land Trust"" Pinot Noir",,RED,Sta. Barbara County,USA,2021,140,bottle
+,Kings Carey,"""Spear Vineyard"" Grenache",,RED,Sta. Barbara County,USA,2018,74,bottle
+,Jolie Laide,"""Dans Le Vide"" Trousseau blend",,RED,Sonoma County,USA,2020,79,bottle
+,Jolie Laide,"""Rancho Coda"" Gamay",,RED,Sonoma County,USA,2022,86,bottle
+,Arnot-Roberts,"""Fellom Ranch"" Cabernet Sauvignon",,RED,Sta. Cruz Mountains,USA,2018,197,bottle
+,Matthiasson,Cabernet Sauvignon,,RED,Napa Valley,USA,2019,179,bottle
+,Bedrock Wine Co.,Cabernet Sauvignon,,RED,Sonoma County,USA,2021,108,bottle
+,"Sky Vineyards, Mt. Veeder",Zinfandel,,RED,Napa Valley,USA,2015,110,bottle
+,Erggelet Brothers,Zinfandel,,RED,Contra Costa County,USA,2019,85,bottle
+,A Los Vinateros Bravos,"""Pais Volcanico"" Pais",,RED,Itata Valley,Chile,2021,39,bottle
+,A Los Vinateros Bravos,"""Pipeno"" Cinsault",,RED,Itata Valley,Chile,2021,42,1L
+,A Los Vinateros Bravos,"""El Tunel"" Cinsault",,RED,Itata Valley,Chile,2018,61,bottle
+,Roberto Henriquez,"""Pais Verde"" Pais",,RED,Bio Bio Valley,Chile,2021,46,bottle
+,Sv Vicenco,"""Plavac"" Plavac Mali",,RED,Dalmatia,Croatia,2016,49,bottle
+,Domaine les Grandes Vignes,"""Le P'tit Vaillant"" Grolleau + Cabernet Franc",VDF,RED,Loire Valley,France,2020,46,bottle
+,Catherine et Pierre Breton,"""Clos Sénéchal"" Cabernet Franc",Burgueil,RED,Loire Valley,France,2017,89,bottle
+,Zulu Vins,"""Morily"" Cabernet Franc",Chinon,RED,Loire Valley,France,2020,58,bottle
+,Pierre Richard,"""Hermetique"" Trousseau",,RED,Jura,France,2022,73,bottle
+,Domaine Chevrot,"""Clos Rousseau"" Santenay 1er Cru Pinot Noir",,RED,Burgundy,France,2020,119,bottle
+,Chateau Cambon,Gamay,,RED,Beaujolais,France,2022,53,bottle
+,Domaine Clusel-Roch,"""Les Schistes"" Côte Rôtie Syrah",,RED,Northern Rhône,France,2019,170,bottle
+,Domaine des Entrefaux,Crozes-Hermitage Rouge Syrah,,RED,Northern Rhône,France,2021,78,bottle
+,Domaine Andre Mathieu,"""Tradition"" Chateauneuf-du-Pape Grenache blend",,RED,Southern Rhône,France,2019,105,bottle
+,Chateau Massereau,"""Cuveé K"" Cabernet Sauvignon blend",,RED,Bordeaux,France,2013,66,bottle
+,Chateau Peyredon Lagravette,Haut Medoc Cabernet Sauvignon blend,,RED,Bordeaux,France,2020,72,bottle
+,Matassa,"""Rouge"" Carignan",VDF,RED,Roussillon,France,2020,87,bottle
+,Clos D'Audhuy,"""Toujours Plus"" Malbec",,RED,Cahors,France,2022,44,bottle
+,Naberauli,Saperavi + Dzelshavi,,,Racha,Georgia,2020,41,bottle
+,Masseria Trullo di Pezza,Primitivo di Manduria,Primitivo,,Puglia,Italy,2019,53,bottle
+,Emidio Pepe,Montepulciano,Montepulciano,,Abruzzo,Italy,2014,300,bottle
+,De Angelis Corvi,"""Fonte Raviliano"", Montepulciano D'Abruzzo",Montepulciano,,Abruzzo,Italy,2019,49,bottle
+,Istine,Chianti Classico,Sangiovese,,Tuscany,Italy,2020,65,bottle
+,Ombretta Agricola,"""Rosso""",CS + Merlot,,Veneto,Italy,2021,48,bottle
+,Crotin,"""Fuso - TEH"", Vino Rosso",Barbera Blend,,Piedmont,Italy,2021,42,bottle
+,Cascina Gasparda,"""Da Nord"", Vino Rosso",Barbera,,Piedmont,Italy,2019,53,bottle
+,Fabio Gea,"""Pino"", Dolcetto D' Alba Superiore",Dolcetto,,Piedmont,Italy,2019,89,bottle
+,Rivella Serafino,"""Montestefano"", Barbaresco",Nebbiolo,,Piedmont,Italy,2018,250,bottle
+,Marziano Abbona,Barolo,Nebbiolo,,Piedmont,Italy,2019,70,bottle
+,Giacomo Borgogno & Figli,"""No Name"", Langhe Rosso",Nebbiolo,,Piedmont,Italy,2019,147,bottle
+,Nevio Scala,"""Rugo"", Vino Rosso",Merlot + CF blend,,Veneto,Italy,NV,49,bottle
+,Feudo Montoni,"""Lagnusa""",Nero D' Avola,,Sicily,Italy,2020,52,bottle
+,Bichi,"""Gordo Guapo""",Garnacha,,Baja California,Mexico,2021,76,bottle
+,Nathan K.,"""Primeur""",Cabernet Franc,,Finger Lakes,USA,2021,59,bottle
+,Explosivo,"""1LT"", Vinho Verde",Vinhao,,Minho,Portugal,2022,42,bottle
+,Bojo do Luar,"""Duplo""",Espadeiro,,Minho,Portugal,2022,43,bottle
+,Hugo Mendes,Castelao,,,Lisbon,Portugal,2021,54,bottle
+,Casa de Saima,"""Reserva""",Baga,,Bairrada,Portugal,2017,65,bottle
+,Maurer,"""Crazy Lud"" Blaufrankisch blend",,,Szerèmsèg,Serbia,2021,56,bottle
+,Iria Otero,"""A Seara Castes Tintas"" Caino Tinto + Souson blend",,,Galicia,Spain,2021,53,bottle
+,Iria Otero,"""Teixugo"", Ribeiro Souson",,,Galicia,Spain,2020,70,bottle
+,Cesar Marquez Perez,"""Pico Ferreira"", Bierzo Mencia",,,Galicia,Spain,2020,77,bottle
+,R. Lopez de Heredia,"""Viña Tondonia"", Reserva Tempranillo blend",Reserva,,Rioja,Spain,2011,135,bottle
+,Mario Ruiz-Clavijo,"""Capitan Fanegas"" Tempranillo + Graciano",,,Rioja,Spain,2020,56,bottle
+,Vega-Sicilia,"""Valbuena 5o"", Ribera del Duero Tempranillo",,,Castilla Y Leon,Spain,2017,430,bottle
+,Jimbr0,"""Origen"" Brunal blend",,,Castilla Y Leon,Spain,2019,49,bottle
+,Bodega de Forlong,"""Petit Forlong"" Merlot + Syrah + Tintilla",,,Andalucía,Spain,2020,42,bottle
+,Costador,"""Metamorphika"", Amphorae Trepat",,,Catalonia,Spain,2020,77,bottle
+,Oriol Artigas,"""Sammay Negre"" Trepat",,,Catalonia,Spain,2023,49,bottle
+,Envinate,"""Benje"" Listan Negro",,,Canary Islands,Spain,2021,76,bottle
+,4 Kilos Vinicola,"""Motor America"" Callet blend",,,Canary Islands,Spain,2021,46,bottle
+,Division Winemaking Co.,"""Nouveau Nouveau"" Gamay",,,Columbia Valley,USA,2024,46,bottle
