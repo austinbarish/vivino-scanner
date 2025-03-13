@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#7B1E26"  # Deep Bordeaux (Red Wine)
+backgroundColor = "#F9F6EE"  # Off-White for elegance
+secondaryBackgroundColor = "#F4E19C"  # White Wine Gold
+textColor = "#3C2F2F"  # Dark Brown for readability
+font = "sans serif"
