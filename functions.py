@@ -3,6 +3,9 @@ import time
 import json
 from tqdm import tqdm
 from typing import List, Dict
+import pandas as pd
+from dotenv import load_dotenv
+import os
 
 
 def extract_text_from_pdf(pdf_path):
@@ -354,3 +357,87 @@ def vivino_search_all(df):
     new_df["link"] = links
 
     return new_df
+
+
+def create_csv_menu(pdf_path, page_nums=0, editor=False):
+    """
+    Parse PDF menu to CSV with manual correction capability
+
+    Args:
+        pdf_path (str): Path to PDF file
+        page_nums (int): Page number to parse (default: 0 for all pages)
+
+    Returns:
+        str: Path to saved CSV file
+    """
+    print("INITIALIZING")
+    # Initialize parser
+    load_dotenv(dotenv_path="config.env")
+    google_key = os.getenv("GOOGLE_KEY")
+    parser = GeminiWineParser(google_key)
+
+    # Parse PDF
+    print("EXTRACTING TEXT")
+    pages = extract_text_from_pdf(pdf_path)
+    print(pages[1])
+    print("DONE EXTRACTING TEXT")
+
+    max_pages = max(pages.keys())
+    pages_to_process = page_nums if page_nums > 0 else max_pages
+
+    # Process each page individually
+    all_results = []
+    for page_num in range(1, pages_to_process + 1):
+        print(f"\nProcessing page {page_num}/{pages_to_process}")
+        page_text = pages[page_num]
+        print(f"Page {page_num} text length: {len(page_text)} characters")
+
+        # Skip empty pages
+        if not page_text.strip():
+            print(f"Skipping page {page_num} - empty text")
+            continue
+
+        # Parse the page
+        try:
+            page_results = parser.parse_wine_list(page_text)
+            print(f"Found {len(page_results)} wines on page {page_num}")
+            all_results.extend(page_results)
+        except Exception as e:
+            print(f"Error parsing page {page_num}: {str(e)}")
+            continue
+
+        # Add page number to all_results
+
+    print("PARSING WINE LIST")
+    print("DONE PARSING WINE LIST")
+    # Convert to DataFrame
+    df = pd.DataFrame(all_results)
+    print("TOTAL WINES: ", len(df))
+    if editor:
+        # Display DataFrame for review
+        print("\nPlease review the parsed data:")
+        print(df)
+
+        while True:
+            edit = input("\nWould you like to make any corrections? (yes/no): ").lower()
+            if edit == "no":
+                break
+            elif edit == "yes":
+                try:
+                    print("\nCurrent columns:", df.columns.tolist())
+                    col = input("Enter column name to edit: ")
+                    row = int(input("Enter row number to edit (0-based index): "))
+                    new_value = input("Enter new value: ")
+                    df.at[row, col] = new_value
+                    print("\nUpdated DataFrame:")
+                    print(df)
+                except Exception as e:
+                    print(f"Error making edit: {str(e)}")
+            else:
+                print("Please enter 'yes' or 'no'")
+
+    # Save to CSV
+    csv_path = pdf_path.rsplit(".", 1)[0] + ".csv"
+    df.to_csv(csv_path, index=False)
+    print(f"\nSaved corrected data to: {csv_path}")
+    return df
