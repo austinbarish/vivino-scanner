@@ -7,6 +7,10 @@ import pandas as pd
 from dotenv import load_dotenv
 import os
 import streamlit as st
+import google.generativeai as genai
+from typing import List, Dict
+import json
+import PyPDF2
 
 
 def extract_text_from_pdf(pdf_path):
@@ -55,11 +59,6 @@ def extract_text_from_pdf(pdf_path):
         print(f"An unexpected error occurred: {str(e)}")
         return None
 
-
-import google.generativeai as genai
-from typing import List, Dict
-import json
-import PyPDF2
 
 # Made with Claude 3.5
 
@@ -409,11 +408,6 @@ def vivino_search(name, producer, type, region, country, vintage, menu_price):
     }
 
     return data
-
-
-from tqdm import tqdm
-import time
-import multiprocessing
 
 
 # Get wine data for all wines in the dataframe

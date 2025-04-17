@@ -1,0 +1,14 @@
+pandas
+numpy
+streamlit
+tqdm
+typing
+requests
+os
+json
+dotenv
+google.generativeai
+PyPDF2
+altair
+seaborn
+matplotlib
