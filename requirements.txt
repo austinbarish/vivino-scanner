@@ -10,3 +10,4 @@ tqdm
 typing
 requests
 dotenv
+beautifulsoup4
