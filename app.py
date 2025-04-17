@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
-import asyncio
 
 # Import functions.py
 from functions import *
@@ -128,7 +127,7 @@ def post_scan():
 
     else:
         # Load the data
-        df = pd.read_csv("./temp/uploads/output.csv")
+        df = pd.read_csv("./temp/outputs/output.csv")
         print(df.columns)
         upload = True
 
