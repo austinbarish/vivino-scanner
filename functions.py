@@ -6,6 +6,7 @@ from typing import List, Dict
 import pandas as pd
 from dotenv import load_dotenv
 import os
+import streamlit as st
 
 
 def extract_text_from_pdf(pdf_path):
@@ -193,7 +194,7 @@ def create_csv_menu(pdf_path, csv_path, page_nums=0, editor=False):
     print("INITIALIZING")
     # Initialize parser
     load_dotenv(dotenv_path="config.env")
-    google_key = os.getenv("GOOGLE_KEY")
+    google_key = st.secrets["GOOGLE_API_KEY"]
     parser = GeminiWineParser(google_key)
 
     # Parse PDF
