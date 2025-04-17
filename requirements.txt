@@ -9,5 +9,4 @@ matplotlib
 tqdm
 typing
 requests
-json
 dotenv
