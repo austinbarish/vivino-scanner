@@ -1,0 +1,95 @@
+id,producer,name,type,main_type,region,vintage,menu_price,size,food_pairings,vivino_price,price_multiplier,rating,link,num_ratings
+,Domanda,Prosecco,NON-VINTAGE,SPARKLING,Veneto,,48,bottle,"['Shellfish', 'Vegetarian', 'Appetizers and snacks', 'Aperitif', 'Cured Meat']",N/A,N/A,3.8,https://www.vivino.com/US/en/wines/1872725,651
+,Contadi Castaldi,Franciacorta Rosé Brut,NON-VINTAGE,SPARKLING,Lombardia,,88,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Enrico Serafino,Alta Langa Brut ‘Oudeis’,BRUT,SPARKLING,Piemonte,2019.0,96,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Goutorbe Bouillot,Champagne Brut ‘Reflets de Rivière’,BRUT,SPARKLING,Damery,,128,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Deltetto,Langhe Rosato ‘Suasi’,ROSATO,ROSE,Piemonte,2023.0,56,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Italo Pietrantonj,Cerasuolo d’Abruzzo,CERASUOLO,ROSE,Abruzzo,2021.0,56,bottle,"['Shellfish', 'Appetizers and snacks', 'Lean fish', 'Mild and soft cheese']",N/A,N/A,3.9,https://www.vivino.com/US/en/wines/35878446,322
+,Cantina Andriano,Pinot Grigio,PINOT GRIGIO,WHITE,Alto Adige,2023.0,52,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Pieropan,Soave Classico,SOAVE CLASSICO,WHITE,Veneto,2023.0,56,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Paitin,Roero Arneis ‘Elisa’,ROERO ARNEIS,WHITE,Piemonte,2023.0,60,bottle,"['Shellfish', 'Pasta', 'Mature and hard cheese', 'Lean fish', 'Cured Meat']",N/A,N/A,3.9,https://www.vivino.com/US/en/wines/162461637,388
+,Villa Sparina,Gavi del Comune di Gavi,GAVI,WHITE,Piemonte,2023.0,60,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Redentore,Sauvignon Blanc,SAUVIGNON BLANC,WHITE,Friuli,2023.0,64,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Guido Marsella,Falanghina,FALANGHINA,WHITE,Campania,2021.0,68,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Tornatore,Etna Bianco,ETNA BIANCO,WHITE,Sicilia,2023.0,72,bottle,"['Shellfish', 'Vegetarian', 'Appetizers and snacks']",N/A,N/A,3.9,https://www.vivino.com/US/en/wines/11428746,5733
+,Antinori,Chardonnay ‘Bramito’,CHARDONNAY,WHITE,Umbria,2022.0,76,bottle,"['Vegetarian', 'Pasta', 'Appetizers and snacks', 'Lean fish', 'Cured Meat']",N/A,N/A,4.0,https://www.vivino.com/US/en/wines/1563203,25692
+,Bègue -Mathtiot,Chablis ‘Les Pargues’,CHABLIS,WHITE,Burgundy,2022.0,104,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Boschis Francesco,Dogliani ‘Pianezzo’,DOGLIANI,RED,Piemonte,2022.0,56,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Fattoria di Rodáno,Chianti Classico,CHIANTI CLASSICO,RED,Toscana,2021.0,64,bottle,"['Beef', 'Veal', 'Pasta', 'Cured Meat']",N/A,N/A,3.9,https://www.vivino.com/US/en/wines/1471026,5297
+,Palladino,Barbera d’Alba,BARBERA D'ALBA,RED,Piemonte,2021.0,64,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Trediberri,Langhe Nebbiolo,LANGHE NEBBIOLO,RED,Piemonte,2023.0,68,bottle,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",5.23,13.0019120458891,3.1,https://www.vivino.com/US/en/wines/3540830,2013
+,Cordero San Giorgio,Pinot Nero ‘Tiamat’,PINOT NERO,RED,Lombardia,2022.0,68,bottle,"['Beef', 'Veal', 'Poultry', 'Game (deer, venison)']",34.14,1.9917984768599883,3.9,https://www.vivino.com/US/en/wines/165743505,709
+,Cesari,Ripasso Valpolicella ‘Mara’,RIPASSO VALPOLICELLA,RED,Veneto,2021.0,68,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Tenuta Regaleali,Nero d’Avola ‘Lamuri’,NERO D'AVOLA,RED,Sicilia,2021.0,72,bottle,"['Beef', 'Lamb', 'Pasta']",N/A,N/A,3.8,https://www.vivino.com/US/en/wines/2340496,24869
+,Colpetrone,Montefalco Sagrantino ‘Memoira’,MONTEFALCO SAGRANTINO,RED,Umbria,2015.0,80,bottle,"['Beef', 'Veal', 'Poultry', 'Pasta']",N/A,N/A,4.0,https://www.vivino.com/US/en/wines/169880458,961
+,Orma,Super Tuscan ‘Rosso di Orma’,SUPER TUSCAN,RED,Toscana,2021.0,88,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Claudio Quarta,Taurasi,TAURASI,RED,Campania,2017.0,96,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Damilano,Barolo Classico ’Lecinquevigne’,BAROLO CLASSICO,RED,Piemonte,2020.0,112,bottle,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/3172365,13578
+,Bartoli Giusti,Brunello di Montalcino,BRUNELLO DI MONTALCINO,RED,Toscana,2019.0,135,bottle,N/A,N/A,N/A,N/A,N/A,N/A
+,Michel Vattan,Sancerre ‘M.K.’,SANCERRE,WHITE,Loire Valley,2023.0,25,glass,"['Pork', 'Shellfish', 'Vegetarian', 'Spicy food', ""Goat's Milk Cheese""]",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/165604281,66
+,Ca’Marcanda,Toscana Bianco ‘Vistamare’,TOSCANA BIANCO,WHITE,Toscana,2023.0,42,glass,"['Vegetarian', 'Pasta', 'Appetizers and snacks', 'Lean fish', 'Cured Meat']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/1905025,9810
+,Peay Vineyards,Chardonnay,CHARDONNAY,WHITE,West Sonoma Coast,2019.0,42,glass,"['Pork', 'Vegetarian', 'Poultry', 'Rich fish (salmon, tuna etc)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/3718493,2716
+,F. Hirtzberger,Grüner Veltliner Smaragd ‘Axpoint’,GRUNER VELTLINER,WHITE,Austria,2021.0,45,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Domaine Bernard Millot,Meursault,MEURSAULT,WHITE,Burgundy,2022.0,46,glass,"['Shellfish', 'Pasta', 'Rich fish (salmon, tuna etc)', 'Mild and soft cheese', 'Cured Meat']",60.01,0.7665389101816364,4.1,https://www.vivino.com/US/en/wines/3179174,371
+,Synthesis,Cabernet Sauvignon,CABERNET SAUVIGNON,RED,Napa Valley,2022.0,25,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Domaine Collotte,Fixin ‘Les Champstions’,FIXIN,RED,Burgundy,2021.0,37,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Ceretto,Barbaresco,BARBARESCO,RED,Piemonte,2020.0,42,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Paolo Scavino,Barolo,BAROLO,RED,Piemonte,2015.0,45,glass,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/2034606,11930
+,Ca’Marcanda,Super Tuscan ‘Magari’,SUPER TUSCAN,RED,Toscana,2022.0,48,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Collosorbo,Brunello di Montalcino,BRUNELLO DI MONTALCINO,RED,Toscana,2016.0,56,glass,N/A,N/A,N/A,N/A,N/A,N/A
+,Deltetto,,Brut,SPARKLING,Piemonte,,80,,"['Appetizers and snacks', 'Aperitif']",N/A,N/A,3.7,https://www.vivino.com/US/en/wines/1754409,264
+,Tosti,Alta Langa ‘Giulio I’,Brut,SPARKLING,Piemonte,2017.0,82,,N/A,N/A,N/A,N/A,N/A,N/A
+,Corte Fusia,Franciacorta ‘Saten’,Extra Brut,SPARKLING,Lombardia,,125,,"['Appetizers and snacks', 'Aperitif']",22.05,5.668934240362812,3.8,https://www.vivino.com/US/en/wines/2917224,869
+,Lorenzo Mattoni,Trebbiano Spoletino,,WHITE,Umbria,2023.0,65,,N/A,N/A,N/A,N/A,N/A,N/A
+,Daniele Conterno,Langhe Nascetta,,WHITE,Piemonte,2021.0,68,,"['Shellfish', 'Pasta', 'Mature and hard cheese', 'Lean fish', 'Cured Meat']",23.79,2.8583438419503993,—,https://www.vivino.com/US/en/wines/166369230,N/A
+,Tenuta Regaleali,Catarratto ‘Buonsenso’,,WHITE,Sicilia,2022.0,72,,N/A,N/A,N/A,N/A,N/A,N/A
+,Felsina,Chardonnay ‘I Sistri ’,,WHITE,Toscana,2022.0,75,,N/A,N/A,N/A,N/A,N/A,N/A
+,G.D. Vajra,Langhe Riesling,,WHITE,Piemonte,2023.0,98,,N/A,N/A,N/A,N/A,N/A,N/A
+,I Favati,Fiano di Avellino Riserva ‘ Etichetta Biancha’,Riserva,WHITE,Campania,2019.0,125,,"['Shellfish', 'Vegetarian', 'Appetizers and snacks']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/168698268,26
+,Ca’Marcanda,Toscana Bianco  ‘Vistamare’,,WHITE,Toscana,2023.0,155,,"['Vegetarian', 'Pasta', 'Appetizers and snacks', 'Lean fish', 'Cured Meat']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/1905025,9810
+,G.D. Vajra,Dolcetto d’Alba  ‘Coste e Fossati ’,,RED,Piemonte,2022.0,58,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,3.8,https://www.vivino.com/US/en/wines/2090384,2024
+,Marchesi di Barolo,Barbera d’Alba  ‘Ruvei’,,RED,Piemonte,2022.0,68,,"['Veal', 'Pork', 'Poultry', 'Pasta', 'Game (deer, venison)']",N/A,N/A,3.8,https://www.vivino.com/US/en/wines/1482783,26525
+,Elio Altare,Barbera d’Alba,,RED,Piemonte,2022.0,75,,"['Veal', 'Pork', 'Poultry', 'Pasta', 'Game (deer, venison)']",31.03,2.4170157911698356,3.9,https://www.vivino.com/US/en/wines/4584294,4756
+,Palladino,Barbera d’Alba  Superiore ‘Bricco delle Olive’,Superiore,RED,Piemonte,2021.0,88,,N/A,N/A,N/A,N/A,N/A,N/A
+,Braida,Barbera d’Asti ‘Montebruna’,,RED,Piemonte,2020.0,79,,"['Veal', 'Pork', 'Poultry', 'Pasta', 'Game (deer, venison)']",25.87,3.053730189408581,3.9,https://www.vivino.com/US/en/wines/1669331,16078
+,G.D. Vajra,Barbera -Freisa Blend,Blend,RED,Piemonte,2021.0,59,,N/A,N/A,N/A,N/A,N/A,N/A
+,Luca Ferraris,Ruche di Monferrato ‘Opera Prima’,,RED,Piemonte,2020.0,95,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/2117961,1529
+,Sottimano,Langhe Nebbiolo,,RED,Piemonte,2022.0,72,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",5.23,13.766730401529635,3.1,https://www.vivino.com/US/en/wines/3540830,2013
+,Vietti,Langhe Nebbiolo ‘Perbacco’,,RED,Piemonte,2021.0,75,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",N/A,N/A,3.9,https://www.vivino.com/US/en/wines/1528937,30251
+,E. Pira & Figli,Langhe Nebbiolo,,RED,Piemonte,2021.0,125,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",N/A,N/A,4.0,https://www.vivino.com/US/en/wines/17963797,2021
+,Matteo Correggia,Roero ‘Val di Preti’,,RED,Piemonte,2016.0,89,,N/A,N/A,N/A,N/A,N/A,N/A
+,Ioppa,Ghemme,,RED,Piemonte,2019.0,95,,N/A,N/A,N/A,N/A,N/A,N/A
+,Gaja,Langhe Rosso ‘Sito Moresco ’,,RED,Piemonte,2021.0,165,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/1749411,29663
+,Sottimano,Barbaresco ‘Basarin ’,,RED,Piemonte,2018.0,159,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/158482052,569
+,Paitin,Barbaresco  ‘Faset’,,RED,Piemonte,2019.0,165,,N/A,N/A,N/A,N/A,N/A,N/A
+,Cocito,Barbaresco  ‘Baluchin ’,,RED,Piemonte,2014.0,175,,N/A,N/A,N/A,N/A,N/A,N/A
+,Cigliuti,Barbaresco ‘Serraboella’,,RED,Piemonte,2015.0,219,,N/A,N/A,N/A,N/A,N/A,N/A
+,Brezza,Barolo  ‘Cannubi’,,RED,Piemonte,2019.0,168,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/1761651,2658
+,G.D. Vajra,Barolo ‘Coste di Rose’,,RED,Piemonte,2015.0,189,,N/A,N/A,N/A,N/A,N/A,N/A
+,Gianni Gagliardo,Barolo ‘Commune di La Morra’,,RED,Piemonte,2019.0,225,,"['Beef', 'Lamb', 'Pasta', 'Game (deer, venison)']",56.72,3.966854724964739,4.2,https://www.vivino.com/US/en/wines/166027732,671
+,E. Pira e Figli,Barol o ‘Via Nuova’,,RED,Piemonte,2018.0,239,,N/A,N/A,N/A,N/A,N/A,N/A
+,Palladino,Barolo Riserva ‘San Bernardo’,Riserva,RED,Piemonte,2010.0,272,,N/A,N/A,N/A,N/A,N/A,N/A
+,Felsina,Chianti Classico,Classico,RED,Toscana,2021.0,79,,N/A,N/A,N/A,N/A,N/A,N/A
+,Felsina,Chianti Classico Riserva  ‘Rancia’,Classico Riserva,RED,Toscana,2020.0,145,,N/A,N/A,N/A,N/A,N/A,N/A
+,Fattoria di Rodáno,Chianti Classico Riserva ‘Viacosta’,Classico Riserva,RED,Toscana,2004.0,225,,N/A,N/A,N/A,N/A,N/A,N/A
+,Carpineto,Vino Nobile di Montepulciano Riserva,Riserva,RED,Toscana,2019.0,75,,N/A,N/A,N/A,N/A,N/A,N/A
+,Argiano,Brunello di Montalcino,,RED,Toscana,2019.0,179,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/1476367,25834
+,Casanova di Neri,Brunello di Montalcino,,RED,Toscana,2019.0,195,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",N/A,N/A,4.4,https://www.vivino.com/US/en/wines/1856407,31426
+,Lambardi,Brunello di Montalcino,,RED,Toscana,2016.0,225,,"['Beef', 'Lamb', 'Poultry', 'Game (deer, venison)']",N/A,N/A,4.1,https://www.vivino.com/US/en/wines/3130867,1470
+,Campo al Comete,Super Tuscan ‘Oltresogno’,Super Tuscan,RED,Toscana,2022.0,85,,"['Beef', 'Lamb', 'Veal', 'Poultry', 'Cured Meat']",27.59,3.0808263863718737,4.2,https://www.vivino.com/US/en/wines/152815830,3465
+,Aia Vecchia,Super Tuscan ‘Sor Ugo ’,Super Tuscan,RED,Toscana,2021.0,102,,N/A,N/A,N/A,N/A,N/A,N/A
+,Tenuta di Arceno,Super Tuscan ‘Il Fauno’,Super Tuscan,RED,Toscana,2021.0,125,,N/A,N/A,N/A,N/A,N/A,N/A
+,Felsina,Super Tuscan ‘Maestro Raro ’,Super Tuscan,RED,Toscana,2017.0,175,,"['Beef', 'Lamb', 'Veal', 'Poultry', 'Cured Meat']",26.66,6.564141035258815,4.2,https://www.vivino.com/US/en/wines/152815830,3465
+,Masi,Valpolicella  Ripass o ‘Brolo -ORO’,Ripasso,RED,Veneto,2016.0,95,,"['Beef', 'Veal', 'Game (deer, venison)']",N/A,N/A,3.7,https://www.vivino.com/US/en/wines/1481448,3766
+,Allegrini,Amarone della Valpolicella,,RED,Veneto,2020.0,179,,"['Beef', 'Lamb', 'Game (deer, venison)', 'Blue cheese']",N/A,N/A,4.3,https://www.vivino.com/US/en/wines/1723424,31819
+,Terlan,Pinot Nero  Riserva  ‘Monticol’,Riserva,RED,Alto Adige,2021.0,95,,N/A,N/A,N/A,N/A,N/A,N/A
+,Tenuta Scers é,Rosso di Valtellina ‘Nettare’,,RED,Lombardia,2022.0,72,,N/A,N/A,N/A,N/A,N/A,N/A
+,Arnaldo Caprai,Montefalco Sagrantino  ‘Collepiano’,,RED,Umbria,2019.0,125,,"['Beef', 'Veal', 'Poultry', 'Pasta']",N/A,N/A,4.2,https://www.vivino.com/US/en/wines/1634378,13402
+,Poderi San Lazzaro,Offida Rosso ‘Grifolo’,,RED,Marche,2016.0,112,,N/A,N/A,N/A,N/A,N/A,N/A
+,Marisa Cuomo,Costa d’Amalfi ‘Furore’,,RED,Campania,2022.0,79,,N/A,N/A,N/A,N/A,N/A,N/A
+,Salvatore Molettieri,Taurasi  ‘Cinque Querce’,,RED,Campania,2015.0,135,,N/A,N/A,N/A,N/A,N/A,N/A
+,Tornatore,Etna Rosso,,RED,Sicilia,2020.0,75,,N/A,N/A,N/A,N/A,N/A,N/A
+,Occhipinti,Frappato  ‘Il Frappato ’,,RED,Sicilia,2021.0,125,,N/A,N/A,N/A,N/A,N/A,N/A
+,Et Fille,Pinot Noir,,RED,Willamette Valley,2022.0,78,,"['Beef', 'Veal', 'Poultry', 'Game (deer, venison)']",32.08,2.4314214463840402,3.9,https://www.vivino.com/US/en/wines/3768436,703
+,Matthiasson,Schioppettino,,RED,Napa Valley,2019.0,105,,N/A,N/A,N/A,N/A,N/A,N/A
+,Animo,Cabernet Sauvignon,,RED,Napa Valley,2018.0,195,,N/A,N/A,N/A,N/A,N/A,N/A
