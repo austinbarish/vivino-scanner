@@ -61,7 +61,9 @@ def intro():
         st.write(
             " ".join(
                 [
-                    "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time. Ideally, you should try to filter down to <30 wines to get the fastest results, but if you have the time you don't have to filter at all!",
+                    "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time.",
+                    "Ideally, you should try to filter down to <30 wines to get the fastest results, but if you have the time you don't have to filter at all!",
+                    "Searches take about 3 seconds per wine, so if you have 100 wines it will take about 5 minutes minimum but can be longer if rates are limited.",
                     "You will see the filters automatically update as you edit them (ex: you won't be able to select champagne if it is not in your price range)",
                     "Note: Once you click the button below, you will not be able to change the filters for the ratings.",
                 ]
@@ -158,7 +160,7 @@ def intro():
         # Count entries and calculate estimated time
         entries = len(df)
         st.write(
-            f"Given {entries} entries, this will take about {round(entries / 60, 1)} minutes."
+            f"Given {entries} entries, this will take at least {round((entries*3) / 60, 1)} minutes."
         )
         st.write("Feel free to go grab a drink while you wait!")
 
