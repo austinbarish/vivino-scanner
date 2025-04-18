@@ -57,7 +57,7 @@ def intro():
             scanned = True
 
     # Offer to filter by wine type, size, or price
-    if os.path.exists("./temp/uploads/uploaded_file.csv") and scanned:
+    if os.path.exists("./temp/uploads/uploaded_file.csv"):
         st.write(
             "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time. You will see the filters automatically update as you edit them (ex: you won't be able to select champagne if it is not in your price range) Note: Once you click the button below, you will not be able to change the filters for the ratings."
         )
