@@ -160,7 +160,13 @@ def intro():
 
         # Show the csv
         st.write("Here is the scanned data with ratings:")
-        st.dataframe(viv_df)
+        display_df = viv_df.copy()
+        # Make sure food pairings is a string
+        viv_df["food_pairings"] = viv_df["food_pairings"].apply(
+            lambda x: str(x) if x != "N/A" else ""
+        )
+        print(viv_df)
+        st.dataframe(display_df)
 
         # Save the data to a csv
         viv_df.to_csv("./temp/outputs/output.csv", index=False)
@@ -427,7 +433,7 @@ def post_scan():
 # Main function to run the app
 def main():
     st.set_page_config(page_title="Wine Scanner", layout="wide")
-    st.title("Wine Scanner")
+    st.title("🍷 Wine Scanner")
 
     # Create a menu
     menu = ["Intro", "Post Scan"]
