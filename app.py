@@ -401,7 +401,7 @@ def post_scan():
                 y=alt.Y(y_axis, title=y_axis.replace("_", " ").title()),
                 color=alt.Color("color", scale=None),
                 size=alt.Size(
-                    "menu_price", scale=alt.Scale(range=[10, 300])
+                    "menu_price", scale=alt.Scale(range=[10, 300]), title="Menu Price"
                 ),  # Adjust size dynamically
                 tooltip=[
                     alt.Tooltip("producer", title="Producer"),
@@ -411,7 +411,7 @@ def post_scan():
                     alt.Tooltip("vintage", title="Vintage"),
                     alt.Tooltip("rating", title="Rating"),
                     alt.Tooltip(
-                        "menu_price", title="Price", format="$,.2f"
+                        "menu_price", title="Menu Price", format="$,.2f"
                     ),  # Format as currency
                 ]
                 + (
