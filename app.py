@@ -307,10 +307,19 @@ def post_scan():
             format="$%.0f",  # Formats values as $XX.XX
         )
 
+        # Filter df by price
+        df = df[
+            (df["menu_price"] >= price_slider[0])
+            & (df["menu_price"] <= price_slider[1])
+        ]
+
         # Add a range slider to filter by rating, default is 0 to 5
         rating_slider = st.sidebar.slider(
             "Rating", min_value=0.0, max_value=5.0, value=(0.0, 5.0), format="%.1f"
         )
+
+        # Filter df by rating
+        df = df[(df["rating"] >= rating_slider[0]) & (df["rating"] <= rating_slider[1])]
 
         # Add pills to filter by size, default is all
         size = st.sidebar.pills(
@@ -321,6 +330,9 @@ def post_scan():
             key="size",
         )
 
+        # Filter df by size
+        df = df[df["size"].isin(size)]
+
         # Add pills to filter by main type, default is all
         wine_type = st.sidebar.pills(
             "Wine Type",
@@ -329,6 +341,8 @@ def post_scan():
             default=df["main_type"].unique(),
             key="wine_type",
         )
+        # Filter df by main type
+        df = df[df["main_type"].isin(wine_type)]
 
         # Add pills to filter by grape, default is all
         grape = st.sidebar.pills(
@@ -348,6 +362,8 @@ def post_scan():
                 default=df["country"].unique(),
                 key="country",
             )
+            # Filter df by country
+            df = df[df["country"].isin(country)]
 
         # Add pills to filter by region, default is all
         region = st.sidebar.pills(
@@ -357,6 +373,8 @@ def post_scan():
             default=df["region"].unique(),
             key="region",
         )
+        # Filter df by region
+        df = df[df["region"].isin(region)]
 
         # Main page, should fill the page with the filtered data
         st.write(f"## {len(df)} wines found")
