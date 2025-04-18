@@ -22,7 +22,7 @@ def intro():
     if not os.path.exists("temp"):
         os.makedirs("temp")
 
-        # Check for upload and outputs folder
+    # Check for upload and outputs folder
     if not os.path.exists("./temp/uploads"):
         os.makedirs("./temp/uploads")
     if not os.path.exists("./temp/outputs"):
@@ -49,15 +49,106 @@ def intro():
                     editor=False,
                 )
                 st.success("Scan complete!")
-                st.balloons()
 
             # Show the csv
             st.write("Here is the scanned data:")
             st.dataframe(df)
 
+    # Offer to filter by wine type, size, or price
+    if os.path.exists("./temp/uploads/uploaded_file.csv"):
+        st.write(
+            "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time. You will see the filters automatically update as you edit them (ex: you won't be able to select champagne if it is not in your price range) Note: Once you click the button below, you will not be able to change the filters for the ratings."
+        )
+        scanned_df = pd.read_csv("./temp/uploads/uploaded_file.csv")
+
+        # Select Price
+        scanned_df["price"] = scanned_df["price"].apply(
+            lambda x: float(x) if x != "N/A" else 0
+        )
+        # Get the max price
+        max_price = scanned_df["price"].max()
+        # Get the min price
+        min_price = scanned_df["price"].min()
+        # Add a slider to filter by price
+        price_slider = st.slider(
+            "Select Price Range",
+            min_value=min_price,
+            max_value=max_price,
+            value=(min_price, max_price),
+            step=1.0,
+            format="$%.0f",  # Formats values as $XX.XX
+            key="price_slider",
+        )
+        # Filter scanned df by price
+        scanned_df = scanned_df[
+            (scanned_df["price"] >= price_slider[0])
+            & (scanned_df["price"] <= price_slider[1])
+        ]
+
+        # Select Main Types
+        main_types = scanned_df["main_type"].unique()
+        main_types = [
+            x for x in main_types if x != "N/A" and x != "" and x != " " and x != "nan"
+        ]
+        # Sort to have Red and White first always then other
+        main_types = sorted(
+            main_types,
+            key=lambda x: (x not in ["RED", "WHITE"], x),
+        )
+        # Add a multiselect to filter by main type
+        main_types_choice = st.pills(
+            "Select Wine Types",
+            main_types,
+            selection_mode="multi",
+            default=main_types,
+            key="main_types",
+        )
+
+        # Filter scanned df by main types
+        scanned_df = scanned_df[scanned_df["main_type"].isin(main_types_choice)]
+
+        # Select Sizes
+        sizes = scanned_df["size"].unique()
+        sizes = [x for x in sizes if x != "N/A"]
+        size_choice = st.pills(
+            "Select Sizes", sizes, selection_mode="multi", default=sizes, key="sizes"
+        )
+        # Filter scanned df by sizes
+        scanned_df = scanned_df[scanned_df["size"].isin(size_choice)]
+
+        # Filter by grape
+        grapes = scanned_df["type"].unique()
+        grapes = [
+            x for x in grapes if x != "N/A" and x != "" and x != " " and x != "nan"
+        ]
+        grape_choice = st.pills(
+            "Select Grapes",
+            grapes,
+            selection_mode="multi",
+            default=grapes,
+            key="grapes",
+        )
+        # Filter scanned df by grapes
+        scanned_df = scanned_df[scanned_df["type"].isin(grape_choice)]
+
     # Show a button to get ratings
     if st.button("Get Ratings"):
         df = pd.read_csv("./temp/uploads/uploaded_file.csv")
+
+        # Filter the data
+        df = df[
+            (df["main_type"].isin(main_types_choice))
+            & (df["size"].isin(size_choice))
+            & (df["price"] >= price_slider[0])
+            & (df["price"] <= price_slider[1])
+        ]
+
+        # Count entries and calculate estimated time
+        entries = len(df)
+        st.write(
+            f"Given {entries} entries, this will take about {round(entries / 60, 1)} minutes."
+        )
+        st.write("Feel free to go grab a drink while you wait!")
 
         with st.spinner("Getting ratings..."):
             # Call the function to get the ratings
