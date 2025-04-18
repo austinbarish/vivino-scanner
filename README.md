@@ -1,8 +1,8 @@
-# [vivino-scanner](winemenuscanner.steamlit.app)
+# vivino-scanner
 
 This app scans wine pdfs (htmls will be another challenge) and extracts as much info as possible from them. It uses Google's Gemini Flash 2.0 to do this. Eventually, I will fine tune my own model to do this, but this is a start. Then, it uses [Vivino](https://www.vivino.com/) to find the wine and get as much info from there as possible. Unfortunately, the Vivino API is rough and does not allow for search so I am scraping the site.
 
-*View the app at [winemenuscanner.steamlit.app](https://winemenuscanner.steamlit.app)*
+*View the app at [winemenuscanner.steamlit.app](https://winemenuscanner.streamlit.app)*
 
 *Current Functionality:*
 - Scan pdfs and extract text using Google's Gemini Flash 2.0.
