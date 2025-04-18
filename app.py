@@ -379,7 +379,7 @@ def post_scan():
         # Main page, should fill the page with the filtered data
         st.write(f"## {len(df)} wines found")
 
-        # Filter the data
+        # Filter the data; should be repetitive but just in case
         filtered_df = df[
             (df["menu_price"] >= price_slider[0])
             & (df["menu_price"] <= price_slider[1])

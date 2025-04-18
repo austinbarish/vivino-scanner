@@ -475,8 +475,8 @@ def vivino_search_all(df):
             print("Failed 5 times in a row. Pausing for 3 minutes.")
             time.sleep(180)
 
-        # Pause for a half second to avoid rate limiting
-        time.sleep(0.51)
+        # Pause for three seconds to avoid rate limiting
+        time.sleep(3)
 
     # Add the lists to the dataframe
     new_df["food_pairings"] = food_pairings
