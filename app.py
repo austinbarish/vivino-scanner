@@ -286,25 +286,50 @@ def post_scan():
             "Rating", min_value=0.0, max_value=5.0, value=(0.0, 5.0), format="%.1f"
         )
 
-        # Add multi-select to filter by size, default is all
-        size = st.sidebar.multiselect(
-            "Size", df["size"].unique(), default=df["size"].unique()
+        # Add pills to filter by size, default is all
+        size = st.sidebar.pills(
+            "Size",
+            df["size"].unique(),
+            selection_mode="multi",
+            default=df["size"].unique(),
+            key="size",
         )
 
-        # Add a multi-select to filter by main type, default is all
-        wine_type = st.sidebar.multiselect(
-            "Wine Type", df["main_type"].unique(), default=df["main_type"].unique()
+        # Add pills to filter by main type, default is all
+        wine_type = st.sidebar.pills(
+            "Wine Type",
+            df["main_type"].unique(),
+            selection_mode="multi",
+            default=df["main_type"].unique(),
+            key="wine_type",
         )
 
-        # Add a multi-select to filter by country, default is all
+        # Add pills to filter by grape, default is all
+        grape = st.sidebar.pills(
+            "Grape Varietal",
+            df["type"].unique(),
+            selection_mode="multi",
+            default=df["type"].unique(),
+            key="grape",
+        )
+
+        # Add pills to filter by country, default is all
         if "country" in df.columns:
-            country = st.sidebar.multiselect(
-                "Country", df["country"].unique(), default=df["country"].unique()
+            country = st.sidebar.pills(
+                "Country",
+                df["country"].unique(),
+                selection_mode="multi",
+                default=df["country"].unique(),
+                key="country",
             )
 
-        # Add a multi-select to filter by region, default is all
-        region = st.sidebar.multiselect(
-            "Region", df["region"].unique(), default=df["region"].unique()
+        # Add pills to filter by region, default is all
+        region = st.sidebar.pills(
+            "Region",
+            df["region"].unique(),
+            selection_mode="multi",
+            default=df["region"].unique(),
+            key="region",
         )
 
         # Main page, should fill the page with the filtered data
@@ -315,6 +340,7 @@ def post_scan():
             (df["menu_price"] >= price_slider[0])
             & (df["menu_price"] <= price_slider[1])
             & (df["main_type"].isin(wine_type) if "main_type" in df.columns else True)
+            & (df["type"].isin(grape) if "type" in df.columns else True)
             & (df["country"].isin(country) if "country" in df.columns else True)
             & (df["region"].isin(region) if "region" in df.columns else True)
             & (df["size"].isin(size) if "size" in df.columns else True)
@@ -372,6 +398,22 @@ def post_scan():
         )
 
         st.altair_chart(chart, use_container_width=True)
+
+        # Make Food Pairings Prettier and last column
+        filtered_df["food_pairings"] = filtered_df["food_pairings"].apply(
+            lambda x: " ".join(
+                (
+                    word.capitalize()
+                    if word.lower() not in ["and", "or", "etc"]
+                    else word.lower()
+                )
+                for word in x.replace("[", "").replace("]", "").replace("'", "").split()
+            )
+        )
+
+        # Move food pairings to the last column
+        food_pairings = filtered_df.pop("food_pairings")
+        filtered_df["food_pairings"] = food_pairings
 
         # Remove _ from the column names
         filtered_df.columns = filtered_df.columns.str.replace("_", " ")
