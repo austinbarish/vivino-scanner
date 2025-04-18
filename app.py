@@ -158,10 +158,7 @@ def intro():
 
         # Show the csv
         st.write("Here is the scanned data with ratings:")
-        st.dataframe(df)
-
-        # Save output
-        df.to_csv("./temp/outputs/output.csv", index=False)
+        st.dataframe(viv_df)
 
         # Save the data to a csv
         viv_df.to_csv("./temp/outputs/output.csv", index=False)
