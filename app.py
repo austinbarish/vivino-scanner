@@ -59,7 +59,13 @@ def intro():
     # Offer to filter by wine type, size, or price
     if os.path.exists("./temp/uploads/uploaded_file.csv"):
         st.write(
-            "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time. You will see the filters automatically update as you edit them (ex: you won't be able to select champagne if it is not in your price range) Note: Once you click the button below, you will not be able to change the filters for the ratings."
+            " ".join(
+                [
+                    "Checking for ratings takes time. You can filter the data by wine type, size, or price now to save time. Ideally, you should try to filter down to <30 wines to get the fastest results, but if you have the time you don't have to filter at all!",
+                    "You will see the filters automatically update as you edit them (ex: you won't be able to select champagne if it is not in your price range)",
+                    "Note: Once you click the button below, you will not be able to change the filters for the ratings.",
+                ]
+            )
         )
         scanned_df = pd.read_csv("./temp/uploads/uploaded_file.csv")
 
@@ -133,6 +139,10 @@ def intro():
         # Filter scanned df by grapes
         scanned_df = scanned_df[scanned_df["type"].isin(grape_choice)]
 
+        # Show the filtered data
+        st.write("Wines to search:")
+        st.dataframe(scanned_df)
+
     # Show a button to get ratings
     if st.button("Get Ratings"):
         df = pd.read_csv("./temp/uploads/uploaded_file.csv")
@@ -162,7 +172,7 @@ def intro():
         st.write("Here is the scanned data with ratings:")
         display_df = viv_df.copy()
         # Make sure food pairings is a string
-        viv_df["food_pairings"] = viv_df["food_pairings"].apply(
+        display_df["food_pairings"] = display_df["food_pairings"].apply(
             lambda x: str(x) if x != "N/A" else ""
         )
         print(viv_df)
@@ -260,22 +270,31 @@ def post_scan():
             if len(df["id"].unique()) <= 2:
                 df = df.drop(columns=["id"])
 
+        # Make a column map for the columns capitalized without _
+        column_map = {}
+        for column in columns:
+            column_map[column] = column.replace("_", " ").title()
+
         # Create a sidebar
         st.sidebar.title("Filters")
 
         # Let user pick x and y axis with default x is price and y is rating with another option of price multiplier or number of reviews
         x_axis = st.sidebar.selectbox(
             "X Axis",
-            ["menu_price", "rating", "price_multiplier", "num_ratings"],
+            ["Menu Price", "Rating", "Price Multiplier", "Num Ratings"],
             key="x",
         )
 
         # Default y axis is rating
         y_axis = st.sidebar.selectbox(
             "Y Axis",
-            ["rating", "menu_price", "price_multiplier", "num_ratings"],
+            ["Rating", "Menu Price", "Price Multiplier", "Num Ratings"],
             key="y",
         )
+
+        # Map the x and y axis to the column names
+        x_axis = x_axis.lower().replace(" ", "_")
+        y_axis = y_axis.lower().replace(" ", "_")
 
         # Add a slider to filter by price
         price_slider = st.sidebar.slider(
