@@ -7,17 +7,19 @@ from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import datetime
+import random
 
 # Import functions.py
 from functions import *
 
 
 # Intro Page to upload the wine scan
-def intro():
+def intro(upload_id, output_id):
+
     st.write(
         "Welcome to the Wine Scanner! Please upload your wine list PDF file to get started."
     )
-    scanned = False
 
     # Check for temp folder
     if not os.path.exists("temp"):
@@ -33,7 +35,7 @@ def intro():
     uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
 
     if uploaded_file is not None:
-        with open("./temp/uploads/uploaded_file.pdf", "wb") as f:
+        with open(f"./temp/uploads/{upload_id}.pdf", "wb") as f:
             f.write(uploaded_file.getbuffer())
 
         st.success("File uploaded successfully!")
@@ -45,8 +47,8 @@ def intro():
             with st.spinner("Scanning..."):
                 # Call the function to scan the PDF and save the results
                 df = create_csv_menu(
-                    "./temp/uploads/uploaded_file.pdf",
-                    "./temp/uploads/uploaded_file.csv",
+                    f"./temp/uploads/{upload_id}.pdf",
+                    f"./temp/uploads/{upload_id}.csv",
                     editor=False,
                 )
                 st.success("Scan complete!")
@@ -54,10 +56,9 @@ def intro():
             # Show the csv
             st.write("Here is the scanned data:")
             st.dataframe(df)
-            scanned = True
 
     # Offer to filter by wine type, size, or price
-    if os.path.exists("./temp/uploads/uploaded_file.csv"):
+    if os.path.exists(f"./temp/uploads/{upload_id}.csv"):
         st.write(
             " ".join(
                 [
@@ -69,7 +70,7 @@ def intro():
                 ]
             )
         )
-        scanned_df = pd.read_csv("./temp/uploads/uploaded_file.csv")
+        scanned_df = pd.read_csv(f"./temp/uploads/{upload_id}.csv")
 
         # Select Price
         scanned_df["price"] = scanned_df["price"].apply(
@@ -147,7 +148,9 @@ def intro():
 
     # Show a button to get ratings
     if st.button("Get Ratings"):
-        df = pd.read_csv("./temp/uploads/uploaded_file.csv")
+
+        # Read data
+        df = pd.read_csv(f"./temp/uploads/{upload_id}.csv")
 
         # Filter the data
         df = df[
@@ -181,7 +184,7 @@ def intro():
         st.dataframe(display_df)
 
         # Save the data to a csv
-        viv_df.to_csv("./temp/outputs/output.csv", index=False)
+        viv_df.to_csv(f"./temp/outputs/{output_id}.csv", index=False)
 
         # Give the option to download the csv to save time
         output_csv = viv_df.to_csv(index=False).encode("utf-8")
@@ -200,23 +203,23 @@ def intro():
 
 # Page for after the wine scan is complete
 # @st.cache_data
-def post_scan():
+def post_scan(upload_id, output_id):
     upload = False
 
     # Check for if output was already made
-    if not os.path.exists("./temp/outputs/output.csv"):
+    if not os.path.exists(f"./temp/outputs/{output_id}.csv"):
         st.write(
             "Please upload a PDF file and run the scan before going to this page. Or, upload a previous csv below"
         )
         uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
         if uploaded_file is not None:
-            with open("./temp/uploads/output.csv", "wb") as f:
+            with open(f"./temp/uploads/{output_id}.csv", "wb") as f:
                 f.write(uploaded_file.getbuffer())
             st.success("File uploaded successfully!")
             st.write("Checking compatibility...")
 
             # Make sure the columns are correct
-            df = pd.read_csv("./temp/uploads/output.csv")
+            df = pd.read_csv("./temp/uploads/{output_id}.csv")
 
             required_columns = {
                 "producer",
@@ -235,7 +238,7 @@ def post_scan():
 
     else:
         # Load the data
-        df = pd.read_csv("./temp/outputs/output.csv")
+        df = pd.read_csv("./temp/outputs/{output_id}.csv")
         print(df.columns)
         upload = True
 
@@ -471,6 +474,15 @@ def post_scan():
 
 # Main function to run the app
 def main():
+    # Create file ids
+    # Create a unique id for the uploaded file
+    random.seed(368)
+    random_num = random.randint(1, 1000000)
+    date = datetime.datetime.now().strftime("%Y-%m-%d")
+
+    upload_id = f"upload_{random_num}_{date}"
+    output_id = f"output_{random_num}_{date}"
+
     st.set_page_config(page_title="Wine Scanner", layout="wide")
     st.title("🍷 Wine Scanner")
 
@@ -479,9 +491,9 @@ def main():
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Intro":
-        intro()
+        intro(upload_id, output_id)
     elif choice == "Post Scan":
-        post_scan()
+        post_scan(upload_id, output_id)
 
 
 if __name__ == "__main__":
