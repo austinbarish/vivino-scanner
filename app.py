@@ -244,7 +244,7 @@ def post_scan(upload_id, output_id):
 
     # Don't start until the file is uploaded
     if upload:
-        # Make sure menu_price, vivino_price, price_multiplier, and rating are floats, if not, set as 0
+        # Make sure menu_price, vivino_price, price_multiplier, num_ratings, and rating are floats, if not, set as 0
         df["menu_price"] = df["menu_price"].apply(
             lambda x: float(x) if x != "N/A" else 0
         )
@@ -252,6 +252,9 @@ def post_scan(upload_id, output_id):
             lambda x: float(x) if x != "N/A" else 0
         )
         df["price_multiplier"] = df["price_multiplier"].apply(
+            lambda x: float(x) if x != "N/A" else 0
+        )
+        df["num_ratings"] = df["num_ratings"].apply(
             lambda x: float(x) if x != "N/A" else 0
         )
 
