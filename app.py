@@ -219,7 +219,7 @@ def post_scan(upload_id, output_id):
             st.write("Checking compatibility...")
 
             # Make sure the columns are correct
-            df = pd.read_csv("./temp/uploads/{output_id}.csv")
+            df = pd.read_csv(f"./temp/uploads/{output_id}.csv")
 
             required_columns = {
                 "producer",
@@ -238,7 +238,7 @@ def post_scan(upload_id, output_id):
 
     else:
         # Load the data
-        df = pd.read_csv("./temp/outputs/{output_id}.csv")
+        df = pd.read_csv(f"./temp/outputs/{output_id}.csv")
         print(df.columns)
         upload = True
 
